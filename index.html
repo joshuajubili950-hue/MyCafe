@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!--- css -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+
+        <!-- Header -->
+        <div data-role="header" data-theme="b">
+            <h1>Joshua's Bakery</h1>
+        </div>
+
+        <!-- nAVIGATION -->
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home" class="ui-btn-active" data-icon="home"> Home </a>
+                </li>
+                <li>
+                    <a href="#products" data-icon="shop"> Products </a>
+                </li>
+                <li>
+                    <a href="#contacts" data-icon="shop"> Contacts </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- content -->
+        <div data-role="content">
+
+            <h2>Welcome to our bakery!</h2>
+
+            <p>We offer freshly baked cakes, pastries, and breads made with love every day.</p>
+
+            <h3>Featured items</h3>
+
+            <!-- card grid -->
+            <div class="card-grid">
+
+                <!-- card -->
+                <div class="card">
+                    <img src="img/cupcake.jpg" alt="Mini Cupcakes">
+                    <h3>Mini Cupcakes</h3>
+                    <p>Perfect bite-sized treats with colorful frosting and sprinkles.</p>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card">
+                    <img src="img/cookies.jpg" alt="Chocolate Cookies">
+                    <h3>Chocolate Cookies</h3>
+                    <p>Delicious soft cookies filled with chocolate chips.</p>
+                </div>
+
+                <!-- card 3 -->
+                <div class="card">
+                    <img src="img/artisanbread.jpg" alt="Artisan Bread">
+                    <h3>Artisan Bread</h3>
+                    <p>Delicious soft cookies filled with chocolate chips.</p>
+                </div>
+
+                <!-- card 4 -->
+                <div class="card">
+                    <img src="img/cake.jpg" alt="Chocolate Cake">
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich and moist chocolate cake with creamy frosting.</p>
+                </div>
+
+                <!-- card 5 -->
+                <div class="card">
+                    <img src="img/croissant.jpg" alt="Butter Croissant">
+                    <h3>Butter Croissant</h3>
+                    <p>Golden, flaky layers with a soft buttery center.</p>
+                </div>
+
+                <!-- card 6 -->
+                <div class="card">
+                    <img src="img/VanillaCupcakes.webp" alt="VanillaCupcake">
+                    <h3>Vanilla Cupcake</h3>
+                    <p>Soft vanilla cake topped with delicious buttercream icing.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!--footer-->
+        <div data-role="footer" data-theme="b">
+            <h4 class="footer-text"> &copy 2050 Joshua's Bakery</h4>
+        </div>
+
+    </div>
+
+
+    <!--product page-->
+    <div data-role="page" id="products">
+
+        <div data-role="header" data-theme="b">
+            <a href="#home" data-icon="home" data-iconpos="notext"></a>
+            <h1>Our Products</h1>
+        </div>
+
+        <!--Navigation-->
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home" data-icon="home"> Home</a>
+                </li>
+                <li>
+                    <a href="#products" class="ui-btn-active" data-icon="shop"> Product</a>
+                </li>
+                <li>
+                    <a href="#contacts" data-icon="phone">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--product content-->
+        <div role="main" class="ui-content">
+
+            <h2>Our Delicious Product</h2>
+
+            <p>
+                Click on any product below to view more details.
+            </p>
+
+            <!--product list-->
+            <ul data-role="listview" data-inset="true" class="product-list">
+
+                <!--chocolate cake-->
+                <li>
+                    <a href="#cake-popup"
+                       class="product-item"
+                       data-rel="popup">
+
+                        <img src="img/cake.jpg" alt="Chocolate Cake">
+
+                        <h2 class="product-name"> Chocolate cake </h2>
+
+                        <p class="product-description">
+                            Rich and moist chocolate sponge topped with creamy chocolate frosting.
+                        </p>
+
+                    </a>
+                </li>
+
+                <!--Butter Croissant-->
+                <li>
+                    <a href="#croissant-popup"
+                       class="product-item"
+                       data-rel="popup">
+
+                        <img src="img/croissant.jpg" alt="Butter Croissant">
+
+                        <h2 class="product-name"> Butter Croissant </h2>
+
+                        <p class="product-description">
+                            Golden flaky layers with a soft butter center
+                        </p>
+
+                    </a>
+                </li>
+
+                <!--Cupcake-->
+                <li>
+                    <a href="#cupcake-popup"
+                       class="product-item"
+                       data-rel="popup">
+
+                        <img src="img/cupcake.jpg" alt="Cupcake">
+
+                        <h2 class="product-name"> Vanilla Cupcake </h2>
+
+                        <p class="product-description">
+                            Soft vanilla cupcake topped with pink buttercream icing
+                        </p>
+
+                    </a>
+                </li>
+
+                <!--Chocolate cookies-->
+                <li>
+                    <a href="#cookies-popup"
+                       class="product-item"
+                       data-rel="popup">
+
+                        <img src="img/cookies.jpg" alt="Chocolate Cookies">
+
+                        <h2 class="product-name"> Chocolate Cookies </h2>
+
+                        <p class="product-description">
+                            Soft and chewy cookies loaded with delicious chocolate chips.
+                        </p>
+
+                    </a>
+                </li>
+
+                <!--Artisan bread-->
+                <li>
+                    <a href="#bread-popup"
+                       class="product-item"
+                       data-rel="popup">
+
+                        <img src="img/artisanbread.jpg" alt="Artisan Bread">
+
+                        <h2 class="product-name"> Artisan Bread </h2>
+
+                        <p class="product-description">
+                            Handcrafted crusty bread baked fresh every morning.
+                        </p>
+
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <!-- POPUP -->
+
+        <div data-role="popup" id="cake-popup">
+            <img src="img/cake.jpg" alt="Chocolate Cake">
+            <h2>Chocolate Cake</h2>
+            <p>Rich and moist chocolate cake with creamy frosting.</p>
+        </div>
+
+        <div data-role="popup" id="croissant-popup">
+            <img src="img/croissant.jpg" alt="Butter Croissant">
+            <h2>Butter Croissant</h2>
+            <p>Golden flaky layers with a soft butter center.</p>
+        </div>
+
+        <div data-role="popup" id="cupcake-popup">
+            <img src="img/cupcake.jpg" alt="Vanilla Cupcake">
+            <h2>Vanilla Cupcake</h2>
+            <p>Soft vanilla cupcake topped with pink buttercream icing.</p>
+        </div>
+
+        <div data-role="popup" id="cookies-popup">
+            <img src="img/cookies.jpg" alt="Chocolate Cookies">
+            <h2>Chocolate Cookies</h2>
+            <p>Soft and chewy cookies loaded with chocolate chips.</p>
+        </div>
+
+        <div data-role="popup" id="bread-popup">
+            <img src="img/artisanbread.jpg" alt="Artisan Bread">
+            <h2>Artisan Bread</h2>
+            <p>Handcrafted crusty bread baked fresh every morning.</p>
+        </div>
+
+
+        <!--footer-->
+        <div data-role="footer" data-theme="b">
+            <h4 class="footer-text"> &copy 2050 Joshua's Bakery</h4>
+        </div>
+
+    <!-- contact page -->
+    <div data-role="page" id="contact">
+        <!-- header -->
+        <div data-role="header" data-theme="b">
+            <a href="#home" data-icon="home" data-iconpos="notext">
+            </a>
+            <h1>Contact Us</h1>
+        </div>
+
+        <!-- Navigation -->
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home" data-icon="home"> Home </a>
+                </li>
+                 <li>
+                    <a href="#products"  data-icon="shop"> Product </a>
+                </li>
+                <li>
+                    <a href="#contacts" class="ui-btn-active" data-icon="phone"> Contact </a>
+                </li>
+            </ul>
+        </div>
+        <!-- contact form -->
+        <div data-role="content">
+            <h2>Get in Touch</h2>
+            <p> We'd love to hear from you! Please fill out the form below.</p>
+
+            <!-- contact form -->
+            <form id="contactForm">
+                <!-- name -->
+                <label for="name"> Name : </label>
+                <input type="text" name="name" id="name" placeholder="Your Name">
+
+                <!--- email -->
+                <label for="email"> Email : </label>
+                <input type="email" name="email" id="email" placeholder="you@example.com">
+
+                <!-- message -->
+                <label for="message"> Message : </label>
+                <textarea name="message" id="message" placeholder="Type your message here..."> </textarea>
+
+                <!-- submit -->
+                <input type="submit" value="Send Message" data-theme="b">
+            </form>
+        </div>
+        <!--footer-->
+        <div data-role="footer" data-theme="b">
+            <h4 class="footer-text"> &copy 2050 Joshua's Bakery</h4>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
